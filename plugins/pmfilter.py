@@ -1524,17 +1524,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     InlineKeyboardButton('Aʙᴏᴜᴛ ✌️', callback_data='about')
                 ],[
                     InlineKeyboardButton('Pʀᴇᴍɪᴜᴍ 💳', callback_data="premium_info"),
-                    InlineKeyboardButton('Rᴇғᴇʀ ⚜️', callback_data="reffff")
+                    InlineKeyboardButton('✇ Sᴜᴘᴘᴏʀᴛ ✇', callback_data='JoinUᴘᴅᴀᴛᴇs')
                 ],[
                     InlineKeyboardButton('Mᴏsᴛ Sᴇᴀʀᴄʜ 🔍', callback_data="mostsearch"),
                     InlineKeyboardButton('Tᴏᴘ Tʀᴇɴᴅɪɴɢ ⚡', callback_data="trending")
                 ],[
-                    InlineKeyboardButton('Gʀᴏᴜᴘ Rᴜʟᴇꜱ 🤖', callback_data="rlu"),
-                    InlineKeyboardButton('Exᴛʀᴀ Fᴇᴀᴛᴜʀᴇꜱ 🔥', callback_data='extra')
-                ],[
-                    InlineKeyboardButton('✇ Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ✇', callback_data='JoinUᴘᴅᴀᴛᴇs')
+                    InlineKeyboardButton('⚜️ Rᴇꜰꜰᴇʀ & Gᴇᴛ Fʀᴇᴇ Pʀᴇᴍɪᴜᴍ ⚜️', callback_data="reffff")
                   ]]
-        
         reply_markup = InlineKeyboardMarkup(buttons)
         current_time = datetime.now(pytz.timezone(TIMEZONE))
         curr_time = current_time.hour        
@@ -1835,21 +1831,21 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
 
     #jisshu
-    elif query.data == "channels":
+    elif query.data == "JoinUᴘᴅᴀᴛᴇs":
         buttons = [[
-            InlineKeyboardButton('⚜️ Oᴜʀ Cʜᴀɴɴᴇʟs ⚜️', url='https://t.me/Kutty_LinkZz')
+            InlineKeyboardButton('⚜️ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ ⚜️', url='https://t.me/HP_MOVIES_WORLD')
         ],[
-            InlineKeyboardButton('🍀 Mᴏᴠɪᴇs Sᴇᴀʀᴄʜ Gʀᴏᴜᴘ 🍀', url='https://t.me/KuttyLinkZzRequest'),
-            InlineKeyboardButton('🥀 Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ 🥀', url='https://t.me/KuttySupport')
+            InlineKeyboardButton('🔍 ɢʀᴏᴜᴘ¹', url='https://t.me/MoviesLinkSearchBot2'),
+            InlineKeyboardButton('ɢʀᴏᴜᴘ² 🔎', url='https://t.me/MoviesLinkSearchBot3')
         ],[
-            InlineKeyboardButton('✉️ Rᴇǫᴜᴇsᴛ Gʀᴏᴜᴘ ✉️', url='https://t.me/+FjvhE5MTRWk3OGI1')
+            InlineKeyboardButton('✉️ ʀᴇǫᴜᴇꜱᴛ ɢʀᴏᴜᴘ ✉️', url='https://t.me/HpMovieRequest')
         ],[
-            InlineKeyboardButton('Hᴏᴍᴇ', callback_data='start'),
-            InlineKeyboardButton('Cʟᴏsᴇ 👮', callback_data='close_data')
+            InlineKeyboardButton('⇇ ʙᴀᴄᴋ', callback_data='start'),
+            InlineKeyboardButton('ꜱᴜᴘᴘᴏʀᴛ 👮', url='https://t.me/HpRequestBot')
         ]]
         reply_markup = InlinekeyboardMarkup(buttons)
         await query.message.edit_text(
-            text=script.CHANNELS_TXT.format(query.from_user.mention),
+            text=script.JOINUPDATES_TXT.format(query.from_user.mention),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
