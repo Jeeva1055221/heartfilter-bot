@@ -21,8 +21,6 @@ import re, asyncio, os, sys
 import json
 import base64
 logger = logging.getLogger(__name__)
-# https://t.me/JISSHU_BOTS
-# https://t.me/Jisshu_support
 TIMEZONE = "Asia/Kolkata"
 BATCH_FILES = {}
 
@@ -171,7 +169,7 @@ async def start(client, message):
             gtxt = "Gᴏᴏᴅ Eᴠᴇɴɪɴɢ 🌘"
         else:
             gtxt = "Gᴏᴏᴅ Nɪɢʜᴛ 🌑"
-        m=await message.reply_sticker("CAACAgUAAxkBAAEM2tBm7__Vo0J5SK-m4_RgNSHyruI7qAAC0wADNgQZVS6F8Jt_4XyNNgQ") 
+        m=await message.reply_sticker("CAACAgUAAxkBAAEJ90Bm-r1PWvU3dkTvtIEQ_XMebp4uYQACoQgAAqi1gVajGZF7NWM5WR4E") 
         await asyncio.sleep(1)
         await m.delete()
         await message.reply_photo(
@@ -208,14 +206,14 @@ async def start(client, message):
         buttons = [[
                     InlineKeyboardButton('☆ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ☆', url=f'http://telegram.me/{temp.U_NAME}?startgroup=true')
                 ],[
+                    InlineKeyboardButton('💸 ᴇᴀʀɴ ᴍᴏɴᴇʏ 💸', callback_data="shortlink_info"),
+                    InlineKeyboardButton('✇ Sᴜᴘᴘᴏʀᴛ ✇', callback_data='JoinUᴘᴅᴀᴛᴇs')
+                ],[
                     InlineKeyboardButton('Hᴇʟᴘ ⚙️', callback_data='help'),
                     InlineKeyboardButton('Aʙᴏᴜᴛ ✌️', callback_data='about')
                 ],[
                     InlineKeyboardButton('Pʀᴇᴍɪᴜᴍ 💳', callback_data="premium_info"),
-                    InlineKeyboardButton('✇ Sᴜᴘᴘᴏʀᴛ ✇', callback_data='JoinUᴘᴅᴀᴛᴇs')
-                ],[
-                    InlineKeyboardButton('Mᴏsᴛ Sᴇᴀʀᴄʜ 🔍', callback_data="mostsearch"),
-                    InlineKeyboardButton('Tᴏᴘ Tʀᴇɴᴅɪɴɢ ⚡', callback_data="trending")
+                    InlineKeyboardButton('♻️ Exᴛʀᴀ Fᴇᴀᴛᴜʀᴇꜱ ✅', callback_data='extra')
                 ],[
                     InlineKeyboardButton('⚜️ Rᴇꜰꜰᴇʀ & Gᴇᴛ Fʀᴇᴇ Pʀᴇᴍɪᴜᴍ ⚜️', callback_data="reffff")
                   ]]
@@ -230,7 +228,7 @@ async def start(client, message):
             gtxt = "Gᴏᴏᴅ Eᴠᴇɴɪɴɢ 🌘"
         else:
             gtxt = "Gᴏᴏᴅ Nɪɢʜᴛ 🌑"
-        m=await message.reply_sticker("CAACAgUAAxkBAAEM2tBm7__Vo0J5SK-m4_RgNSHyruI7qAAC0wADNgQZVS6F8Jt_4XyNNgQ") 
+        m=await message.reply_sticker("CAACAgUAAxkBAAEJ90Bm-r1PWvU3dkTvtIEQ_XMebp4uYQACoQgAAqi1gVajGZF7NWM5WR4E") 
         await asyncio.sleep(1)
         await m.delete()
         await message.reply_photo(
