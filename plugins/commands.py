@@ -153,12 +153,12 @@ async def start(client, message):
                     InlineKeyboardButton('Aʙᴏᴜᴛ ✌️', callback_data='about')
                 ],[
                     InlineKeyboardButton('Pʀᴇᴍɪᴜᴍ 💳', callback_data="premium_info"),
-                    InlineKeyboardButton('Rᴇғᴇʀ ⚜️', callback_data="reffff")
+                    InlineKeyboardButton('✇ Sᴜᴘᴘᴏʀᴛ ✇', callback_data='JoinUᴘᴅᴀᴛᴇs')
                 ],[
                     InlineKeyboardButton('Mᴏsᴛ Sᴇᴀʀᴄʜ 🔍', callback_data="mostsearch"),
                     InlineKeyboardButton('Tᴏᴘ Tʀᴇɴᴅɪɴɢ ⚡', callback_data="trending")
                 ],[
-                    InlineKeyboardButton('✇ Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ✇', callback_data='JoinUᴘᴅᴀᴛᴇs')
+                    InlineKeyboardButton('⚜️ Rᴇꜰꜰᴇʀ & Gᴇᴛ Fʀᴇᴇ Pʀᴇᴍɪᴜᴍ ⚜️', callback_data="reffff")
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         current_time = datetime.now(pytz.timezone(TIMEZONE))
@@ -212,12 +212,12 @@ async def start(client, message):
                     InlineKeyboardButton('Aʙᴏᴜᴛ ✌️', callback_data='about')
                 ],[
                     InlineKeyboardButton('Pʀᴇᴍɪᴜᴍ 💳', callback_data="premium_info"),
-                    InlineKeyboardButton('Rᴇғᴇʀ ⚜️', callback_data="reffff")
+                    InlineKeyboardButton('✇ Sᴜᴘᴘᴏʀᴛ ✇', callback_data='JoinUᴘᴅᴀᴛᴇs')
                 ],[
                     InlineKeyboardButton('Mᴏsᴛ Sᴇᴀʀᴄʜ 🔍', callback_data="mostsearch"),
                     InlineKeyboardButton('Tᴏᴘ Tʀᴇɴᴅɪɴɢ ⚡', callback_data="trending")
                 ],[
-                    InlineKeyboardButton('✇ Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ✇', callback_data='JoinUᴘᴅᴀᴛᴇs')
+                    InlineKeyboardButton('⚜️ Rᴇꜰꜰᴇʀ & Gᴇᴛ Fʀᴇᴇ Pʀᴇᴍɪᴜᴍ ⚜️', callback_data="reffff")
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         current_time = datetime.now(pytz.timezone(TIMEZONE))
